@@ -1,1 +1,97 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recherche de Voyages</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Recherche de Voyages</h1>
+    </header>
+    
+    <nav>
+        <ul>
+            <li><a href="#">Accueil</a></li>
+            <li><a href="#">Destinations</a></li>
+            <li><a href="#">Offres spéciales</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </nav>
+    
+    <main>
+        <section class="intro">
+            <h2>Trouvez votre voyage idéal</h2>
+            <form action="#" method="GET" class="search-form">
+                <label for="destination">Destination :</label>
+                <input type="text" id="destination" name="destination" placeholder="Entrez une destination">
+                
+                <label for="date-depart">Date de départ :</label>
+                <input type="date" id="date-depart" name="date-depart">
+                
+                <label for="date-retour">Date de retour :</label>
+                <input type="date" id="date-retour" name="date-retour">
+                
+                <label for="type-voyage">Type de voyage :</label>
+                <select id="type-voyage" name="type-voyage">
+                    <option value="aventure">Aventure</option>
+                    <option value="plage">Plage</option>
+                    <option value="culturel">Culturel</option>
+                    <option value="luxe">Luxe</option>
+                </select>
+                
+                <label>
+                    <input type="checkbox" name="options" value="vol-inclus"> Vol inclus
+                </label>
+                <label>
+                    <input type="checkbox" name="options" value="hotel-inclus"> Hôtel inclus
+                </label>
+                
+                <button type="submit">Rechercher</button>
+            </form>
+        </section>
+
+        <section class="predefined-trips">
+            <h2>Voyages Pré-définis</h2>
+            <div class="trip">
+                <img src="https://cdn.tui.be/img/destinations/Header/frvacance-indonesie-bali.jpg" alt="Voyage à Bali">
+                <h3>Voyage à Bali</h3>
+                <p>Prix : 1200€</p>
+                <p>Personnes : 2</p>
+                <p>Dates : 10-20 Juillet 2025</p>
+                <a href="#">Voir l'offre</a>
+            </div>
+            <div class="trip">
+                <img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/17/15/6d/d6/paris.jpg?w=1200&h=-1&s=1" alt="Voyage à Paris">
+                <h3>Voyage à Paris</h3>
+                <p>Prix : 800€</p>
+                <p>Personnes : 1</p>
+                <p>Dates : 5-12 Mai 2025</p>
+                <a href="#">Voir l'offre</a>
+            </div>
+            <div class="trip">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/47/New_york_times_square-terabass.jpg/800px-New_york_times_square-terabass.jpg" alt="Voyage à New York">
+                <h3>Voyage à New York</h3>
+                <p>Prix : 1500€</p>
+                <p>Personnes : 2</p>
+                <p>Dates : 1-10 Septembre 2025</p>
+                <a href="#">Voir l'offre</a>
+            </div>
+          <div class="trip">
+                <img src="https://static-cdn.toi-media.com/fr/uploads/2014/07/sarcelles31.jpg">
+                <h3>Voyage à Sarcelles</h3>
+                <p>Prix : Gratuit</p>
+                <p>Personnes : illimité</p>
+                <p>Dates : Toute l'année</p>
+                <a href="#">Ne pas voir l'offre</a>
+            </div>
+        </section>
+    </main>
+    
+    <footer>
+        <p>&copy; 2025 Recherche de Voyages - Tous droits réservés</p>
+    </footer>
+</body>
+</html>
 
