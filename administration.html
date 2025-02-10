@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Administration - Lassana Airline</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        .admin-panel {
+            width: 80%;
+            margin: 50px auto;
+            text-align: center;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+        th, td {
+            padding: 15px;
+            text-align: center;
+            border-bottom: 1px solid #ddd;
+        }
+        th {
+            background-color: #242424;
+            color: #f5f5f5;
+        }
+        td button {
+            margin: 5px;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .vip {
+            background-color: #ffcc70;
+            color: #121212;
+        }
+        .ban {
+            background-color: #ff4d4d;
+            color: white;
+        }
+        .remove-vip {
+            background-color: #b0b0b0;
+            color: #121212;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Administration - Lassana Airline</h1>
+    </header>
+    
+    <nav>
+        <ul>
+            <li><a href="index.html">Accueil</a></li>
+            <li><a href="presentation.html">Présentation</a></li>
+            <li><a href="recherche.html">Rechercher un voyage</a></li>
+            <li><a href="inscription.html">Inscription</a></li>
+            <li><a href="connexion.html">Connexion</a></li>
+            <li><a href="admin.html">Administration</a></li>
+        </ul>
+    </nav>
+    
+    <main>
+        <section class="admin-panel">
+            <h2>Gestion des utilisateurs</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>Nom</th>
+                        <th>Email</th>
+                        <th>Statut</th>
+                        <th>Actions</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td>Jean Dupont</td>
+                        <td>jean.dupont@example.com</td>
+                        <td>Client</td>
+                        <td>
+                            <button class="vip">VIP</button>
+                            <button class="ban">Bannir</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>Marie Curie</td>
+                        <td>marie.curie@example.com</td>
+                        <td>Client VIP</td>
+                        <td>
+                            <button class="remove-vip">Retirer VIP</button>
+                            <button class="ban">Bannir</button>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+    </main>
+    
+    <footer>
+        <p>&copy; 2025 Lassana Airline. Tous droits réservés.</p>
+    </footer>
+</body>
+</html>
