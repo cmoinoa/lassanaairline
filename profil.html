@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mon Profil - Lassana Airlines</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <h1>Mon Profil</h1>
+        <p>Gérez vos informations personnelles</p>
+    </header>
+    <main>
+        <section class="profile-container">
+            <div class="profile-header">
+                <img src="profile.jpg" alt="Photo de profil" class="profile-pic">
+                <button class="edit-btn"><i class="fas fa-camera"></i></button>
+            </div>
+            <div class="profile-info">
+                <label>Nom :</label>
+                <p id="nom">Dupont <button class="edit-btn" onclick="editField('nom')"><i class="fas fa-pencil-alt"></i></button></p>
+                
+                <label>Prénom :</label>
+                <p id="prenom">Jean <button class="edit-btn" onclick="editField('prenom')"><i class="fas fa-pencil-alt"></i></button></p>
+
+                <label>Email :</label>
+                <p id="email">jean.dupont@example.com <button class="edit-btn" onclick="editField('email')"><i class="fas fa-pencil-alt"></i></button></p>
+
+                <label>Mot de passe :</label>
+                <p>******** <button class="edit-btn"><i class="fas fa-pencil-alt"></i></button></p>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2025 Lassana Airlines - Tous droits réservés</p>
+    </footer>
+
+    <script>
+        function editField(fieldId) {
+            let field = document.getElementById(fieldId);
+            let currentValue = field.innerText;
+            let newValue = prompt("Modifier " + fieldId + " :", currentValue);
+            if (newValue !== null && newValue !== "") {
+                field.innerHTML = newValue + ' <button class="edit-btn" onclick="editField(\'' + fieldId + '\')"><i class="fas fa-pencil-alt"></i></button>';
+            }
+        }
+    </script>
+</body>
+</html>
