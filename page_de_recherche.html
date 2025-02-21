@@ -7,15 +7,11 @@
     <link rel="stylesheet" href="css/page_de_recherche.css">
 </head>
 <body>
-   
-      <header>
-    
-    <a href="#" style="position: absolute; top: 20px; right: 20px; background-color: #ffcc70; color: #121212; text-decoration: none; font-weight: bold; padding: 10px 15px; border-radius: 8px; transition: background 0.3s; box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);">
-        Mon Profil
-    </a>
-
-
+    <header>
         <h1>Recherche de Voyages</h1>
+        <button style="position: absolute; top: 20px; right: 20px; background-color: #ffcc70; color: #121212; padding: 10px 15px; border: none; border-radius: 8px; font-weight: bold; cursor: pointer;">
+            Mon Profil
+        </button>
     </header>
     
     <nav>
@@ -31,31 +27,33 @@
         <section class="intro">
             <h2>Trouvez votre voyage idéal</h2>
             <form action="#" method="GET" class="search-form">
-                <label for="destination">Destination :</label>
-                <input type="text" id="destination" name="destination" placeholder="Entrez une destination">
-                
-                <label for="date-depart">Date de départ :</label>
-                <input type="date" id="date-depart" name="date-depart">
-                
-                <label for="date-retour">Date de retour :</label>
-                <input type="date" id="date-retour" name="date-retour">
-                
-                <label for="type-voyage">Type de voyage :</label>
-                <select id="type-voyage" name="type-voyage">
-                    <option value="aventure">Aventure</option>
-                    <option value="plage">Plage</option>
-                    <option value="culturel">Culturel</option>
-                    <option value="luxe">Luxe</option>
-                </select>
-                
-                <label>
-                    <input type="checkbox" name="options" value="vol-inclus"> Vol inclus
-                </label>
-                <label>
-                    <input type="checkbox" name="options" value="hotel-inclus"> Hôtel inclus
-                </label>
-                
-                <button type="submit">Rechercher</button>
+                <div style="display: flex; gap: 10px; flex-wrap: wrap; align-items: center; justify-content: center;">
+                    <label for="destination">Destination :</label>
+                    <input type="text" id="destination" name="destination" placeholder="Entrez une destination">
+                    
+                    <label for="date-depart">Date de départ :</label>
+                    <input type="date" id="date-depart" name="date-depart">
+                    
+                    <label for="date-retour">Date de retour :</label>
+                    <input type="date" id="date-retour" name="date-retour">
+                    
+                    <label for="type-voyage">Type de voyage :</label>
+                    <select id="type-voyage" name="type-voyage">
+                        <option value="aventure">Aventure</option>
+                        <option value="plage">Plage</option>
+                        <option value="culturel">Culturel</option>
+                        <option value="luxe">Luxe</option>
+                    </select>
+
+                    <label>
+                        <input type="checkbox" name="options" value="vol-inclus"> Vol inclus
+                    </label>
+                    <label>
+                        <input type="checkbox" name="options" value="hotel-inclus"> Hôtel inclus
+                    </label>
+
+                    <button type="submit">Rechercher</button>
+                </div>
             </form>
         </section>
 
@@ -63,11 +61,11 @@
             <h2>Voyages Pré-définis</h2>
             <div class="trip">
                 <div class="image-slider">
-                <div class="image-container">
-                <img src="https://tcsvoyages.ch/wp-content/uploads/2020/02/shutterstock-631736717-pura-ulun-danu-bratan-temple-in-bali-indonesia-1623x1080.jpg" alt="Image 1">
-                <img src="https://t3.ftcdn.net/jpg/06/10/36/32/360_F_610363255_NU13RjmBvftNmYebR7Y9hGIffBuEWvup.webp" alt="Image 2">
-                <img src="https://baliauthentique.com/wp-content/uploads/pura-kehen-temple-bali-bangli-courtyard.jpg" alt="Image 3">
-                </div>
+                    <div class="image-container">
+                        <img src="https://tcsvoyages.ch/wp-content/uploads/2020/02/shutterstock-631736717-pura-ulun-danu-bratan-temple-in-bali-indonesia-1623x1080.jpg" alt="Bali 1">
+                        <img src="https://t3.ftcdn.net/jpg/06/10/36/32/360_F_610363255_NU13RjmBvftNmYebR7Y9hGIffBuEWvup.webp" alt="Bali 2">
+                        <img src="https://baliauthentique.com/wp-content/uploads/pura-kehen-temple-bali-bangli-courtyard.jpg" alt="Bali 3">
+                    </div>
                 </div>
                 <h3>Voyage à Bali</h3>
                 <p>Prix : 1200€</p>
@@ -75,13 +73,14 @@
                 <p>Dates : 10-20 Juillet 2025</p>
                 <a href="#">Voir l'offre</a>
             </div>
+
             <div class="trip">
-              <div class="image-slider">
-                <div class="image-container">
-                <img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/17/15/6d/d6/paris.jpg?w=1200&h=-1&s=1" alt="Image 1">
-                <img src="https://www.france-voyage.com/visuals/photos/arc-triomphe-36075_w400.webp" alt="Image 2">
-                <img src="https://www.pariscityvision.com/library/image/6877.jpg" alt="Image 3">
-                </div>
+                <div class="image-slider">
+                    <div class="image-container">
+                        <img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/17/15/6d/d6/paris.jpg?w=1200&h=-1&s=1" alt="Paris 1">
+                        <img src="https://www.france-voyage.com/visuals/photos/arc-triomphe-36075_w400.webp" alt="Paris 2">
+                        <img src="https://www.pariscityvision.com/library/image/6877.jpg" alt="Paris 3">
+                    </div>
                 </div>
                 <h3>Voyage à Paris</h3>
                 <p>Prix : 800€</p>
@@ -89,13 +88,14 @@
                 <p>Dates : 5-12 Mai 2025</p>
                 <a href="#">Voir l'offre</a>
             </div>
+
             <div class="trip">
                 <div class="image-slider">
-                <div class="image-container">
-                <img src="https://image.newyorkcity.fr/wp-content/uploads/2020/03/New-York-Helicopter-Tour-2.eric_both.bottom_right.jpg" alt="Image 1">
-                <img src="https://programs.seminaire.com/uploads/medium_seminaire_usa_new_york_1_adcc2933cc.jpg" alt="Image 2">
-                <img src="https://cdn.britannica.com/61/93061-050-99147DCE/Statue-of-Liberty-Island-New-York-Bay.jpg" alt="Image 3">
-                </div>
+                    <div class="image-container">
+                        <img src="https://image.newyorkcity.fr/wp-content/uploads/2020/03/New-York-Helicopter-Tour-2.eric_both.bottom_right.jpg" alt="New York 1">
+                        <img src="https://programs.seminaire.com/uploads/medium_seminaire_usa_new_york_1_adcc2933cc.jpg" alt="New York 2">
+                        <img src="https://cdn.britannica.com/61/93061-050-99147DCE/Statue-of-Liberty-Island-New-York-Bay.jpg" alt="New York 3">
+                    </div>
                 </div>
                 <h3>Voyage à New York</h3>
                 <p>Prix : 1500€</p>
@@ -103,15 +103,15 @@
                 <p>Dates : 1-10 Septembre 2025</p>
                 <a href="#">Voir l'offre</a>
             </div>
-          <div class="trip">
+
+            <div class="trip">
                 <div class="image-slider">
-                <div class="image-container">
-                <img src="https://www.sarcelles.fr/wp-content/uploads/2021/07/PHOTO-AERIENNE-SARCELLES-3.jpeg" alt="Image 1">
-                <img src="https://www.leparisien.fr/resizer/6iuxoeNpkspSDwJAs6cxkw_s6q0=/932x582/cloudfront-eu-central-1.images.arcpublishing.com/leparisien/IRD7D7FBCNFXXL4KXWYMAGOKUA.jpg" alt="Image 2">
-                <img src="https://i.f1g.fr/media/sport24/orig/var/plain_site/storage/images/football/ligue-1/actualites/apres-avoir-resilie-avec-le-psg-lassana-diarra-annonce-sa-retraite-945956/25478489-1-fre-FR/Apres-avoir-resilie-avec-le-PSG-Lassana-Diarra-annonce-sa-retraite.jpg" alt="Image 3">
+                    <div class="image-container">
+                        <img src="https://www.sarcelles.fr/wp-content/uploads/2021/07/PHOTO-AERIENNE-SARCELLES-3.jpeg" alt="Sarcelles 1">
+                        <img src="https://www.leparisien.fr/resizer/6iuxoeNpkspSDwJAs6cxkw_s6q0=/932x582/cloudfront-eu-central-1.images.arcpublishing.com/leparisien/IRD7D7FBCNFXXL4KXWYMAGOKUA.jpg" alt="Sarcelles 2">
+                        <img src="https://i.f1g.fr/media/sport24/orig/var/plain_site/storage/images/football/ligue-1/actualites/apres-avoir-resilie-avec-le-psg-lassana-diarra-annonce-sa-retraite-945956/25478489-1-fre-FR/Apres-avoir-resilie-avec-le-PSG-Lassana-Diarra-annonce-sa-retraite.jpg" alt="Sarcelles 3">
+                    </div>
                 </div>
-                </div>
-         
                 <h3>Voyage à Sarcelles</h3>
                 <p>Prix : Gratuit</p>
                 <p>Personnes : illimité</p>
