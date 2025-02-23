@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>À propos de nous - Lassana Airlines</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" rel="stylesheet">
+    <style>
+        body {
+            background-color: #121212;
+            color: #f5f5f5;
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            
+        }
+        header {
+            background-color: #1e1e1e;
+            width: 100%;
+            padding: 20px;
+            text-align: center;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+            position: relative;
+        }
+        header h1 {
+            color: #ffcc70;
+        }
+        .profile-box {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            background: rgba(255, 255, 255, 0.1);
+            padding: 10px 20px;
+            border-radius: 12px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
+        }
+        .profile-link {
+            background: transparent;
+            border: none;
+            outline: none;
+            color: #ffcc70;
+            font-size: 1rem;
+            text-decoration: none;
+            font-weight: bold;
+            transition: color 0.3s;
+            display: flex;
+            align-items: center;
+        }
+        .profile-link i {
+            margin-right: 8px;
+        }
+        .profile-link:hover {
+            color: #ffb347;
+        }
+        .container {
+            display: flex;
+            justify-content: space-around;
+            width: 80%;
+            margin: 40px auto;
+        }
+        .presentation, .search-box {
+            background: rgba(255, 255, 255, 0.1);
+            padding: 20px;
+            border-radius: 12px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
+            width: 45%;
+        }
+        .presentation h2, .search-box h2 {
+            color: #ffcc70;
+        }
+        .search-box input {
+            width: 100%;
+            padding: 10px;
+            font-size: 1rem;
+            border: none;
+            outline: none;
+            background: transparent;
+            color: #ffcc70;
+            border-bottom: 2px solid #ffcc70;
+        }
+        .search-box input::placeholder {
+            color: #ffcc70;
+        }
+        footer {
+            text-align: center;
+            padding: 15px;
+            margin-top: 40px;
+            background-color: #1e1e1e;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="profile-box">
+            <a href="#" class="profile-link"><i class="fas fa-user"></i> Mon Profil</a>
+        </div>
+        <h1>À propos de nous</h1>
+       <nav>
+        <ul>
+            <li><a href="#">Accueil</a></li>
+            <li><a href="#">Destinations</a></li>
+            <li><a href="#">À propos de nous</a></li>
+            <li><a href="#">Connexion</a></li>
+        </ul>
+    </nav>
+    </header>
+    <main>
+        <div class="container">
+            <section class="presentation">
+                
+                <p >Bienvenue sur Lassana Airlines, votre compagnon de voyage idéal ! <br>-Notre site comporte de nombreuses options, un moyen de se connecter pour recevoir vos billets en toute securité.<br>-Un champ de recherche intelligent qui filtre vos envies en fonction de la date et du type de voyage avec les options vol et hotels inclus.<br>-Une présentation globale de ce qu'est Lassana Airlines corporation en page d'accueil.</p>
+             
+            </section>
+            <section class="search-box">
+                <h2>Recherche rapide</h2>
+              <p>Tapez votre destination de rêve et laissez vous porter</p>
+                <input type="text" placeholder="Rechercher...">
+            </section>
+        </div>
+    </main>
+    <footer>
+        <p>Mathieu Jaques, Noa Feliot-Bertrand, Maxence Pouliquen</p>
+        <p>&copy; 2025 Lassana Airlines - Tous droits réservés</p>
+    </footer>
+</body>
+</html>
