@@ -6,12 +6,52 @@
     <title>Lassana Airlines</title>
     <link rel="stylesheet" href="css/acceuil.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" rel="stylesheet">
+    <style>
+        .search-box, .profile-box {
+            position: absolute;
+            top: 20px;
+            background: rgba(255, 255, 255, 0.1);
+            padding: 10px 20px;
+            border-radius: 12px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
+        }
+        .search-box {
+            left: 20px;
+        }
+        .profile-box {
+            right: 20px;
+        }
+        .search-box input, .profile-link {
+            background: transparent;
+            border: none;
+            outline: none;
+            color: #ffcc70;
+            font-size: 1rem;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        .search-box input::placeholder {
+            color: #ffcc70;
+        }
+        .profile-link {
+            transition: color 0.3s, transform 0.2s;
+        }
+        .profile-link:hover {
+            color: #ffb347;
+            transform: scale(1.1);
+        }
+    </style>
 </head>
 <body>
     <header>
+        <div class="search-box">
+            <input type="text" placeholder="Rechercher...">
+        </div>
+        <div class="profile-box">
+            <a href="#" class="profile-link"><i class="fas fa-user"></i> Mon Profil</a>
+        </div>
         <h1>Lassana Airlines</h1>
-      
-   
         <span style="font-size : 20px">Explorez le monde avec nos circuits exclusifs</span>
     </header>
     <nav>
@@ -26,9 +66,9 @@
         <section class="intro">
          <h2>Découvrez nos circuits préconçus</h2>
             <p>🌍 Partez à la découverte du monde sans souci !✈️<br>
-Envie d’évasion sans les tracas de l’organisation ? Nos voyages soigneusement préparés vous emmènent vers des destinations de rêve, alliant confort, découverte et sérénité. Que vous rêviez de flâner dans les rues d’une capitale animée, de vous détendre sur une plage paradisiaque ou d’explorer des paysages à couper le souffle, nous avons conçu des itinéraires adaptés à toutes vos envies.
-
-Laissez-nous gérer les détails pendant que vous profitez pleinement de chaque instant. Voyagez l’esprit léger, vivez des expériences uniques et créez des souvenirs inoubliables ! 🌟✨</p>
+                Envie d’évasion sans les tracas de l’organisation ? Nos voyages soigneusement préparés vous emmènent vers des destinations de rêve, alliant confort, découverte et sérénité. Que vous rêviez de flâner dans les rues d’une capitale animée, de vous détendre sur une plage paradisiaque ou d’explorer des paysages à couper le souffle, nous avons conçu des itinéraires adaptés à toutes vos envies.
+                
+                Laissez-nous gérer les détails pendant que vous profitez pleinement de chaque instant. Voyagez l’esprit léger, vivez des expériences uniques et créez des souvenirs inoubliables ! 🌟✨</p>
         </section>
     </main>
     <footer>
