@@ -5,13 +5,35 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Recherche de Voyages</title>
     <link rel="stylesheet" href="css/page_de_recherche.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" rel="stylesheet">
+    <style>
+        .profile-box {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            background: rgba(255, 255, 255, 0.1);
+            padding: 10px 20px;
+            border-radius: 12px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
+        }
+        .profile-link {
+            color: #ffcc70;
+            text-decoration: none;
+            font-weight: bold;
+            transition: color 0.3s, transform 0.2s;
+        }
+        .profile-link:hover {
+            color: #ffb347;
+            transform: scale(1.1);
+        }
+    </style>
 </head>
 <body>
     <header>
         <h1>Recherche de Voyages</h1>
-        <button style="position: absolute; top: 20px; right: 20px; background-color: #ffcc70; color: #121212; padding: 10px 15px; border: none; border-radius: 8px; font-weight: bold; cursor: pointer;">
-            Mon Profil
-        </button>
+        <div class="profile-box">
+            <a href="#" class="profile-link"><i class="fas fa-user"></i> Mon Profil</a>
+        </div>
     </header>
     
     <nav>
@@ -19,7 +41,7 @@
             <li><a href="#">Accueil</a></li>
             <li><a href="#">Destinations</a></li>
             <li><a href="#">Offres spéciales</a></li>
-            <li><a href="#">A propos de nous</a></li>
+            <li><a href="#">À propos de nous</a></li>
         </ul>
     </nav>
     
@@ -55,9 +77,9 @@
                     <button type="submit">Rechercher</button>
                 </div>
             </form>
+          
         </section>
-
-        <section class="predefined-trips">
+      <section class="predefined-trips">
             <h2>Voyages Pré-définis</h2>
             <div class="trip">
                 <div class="image-slider">
