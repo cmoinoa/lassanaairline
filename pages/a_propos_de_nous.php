@@ -86,7 +86,7 @@ session_start();
             <h2>Notre Équipe</h2>
             <div class="team-member">
             <h3>PDG</h3>
-                <p>Noa FELIOT-BERTRAND</p>
+                <p>Noa Feliot-Bertrand</p>
             </div>
             <div class="team-member">
             <h3>Directrice des opérations</h3>
