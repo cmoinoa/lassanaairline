@@ -1,0 +1,242 @@
+[
+  {
+    "title": "Découverte de la France",
+    "banner": "https://encrypted-tbn3.gstatic.com/licensed-image?q=tbn:ANd9GcRpKbgRvjtgFy7QI9NlXhfZpx7n6xKgM4aMajpC4ukIgCP1fXWdZMHDg2yQG57-_RXbpq0IzD0Jobnlskio1G1Lf-qFENSGKEbsIF8mCQ",
+    "dates": {
+      "start": "2025-06-15",
+      "end": "2025-06-25",
+      "duration": "10 jours"
+    },
+    "steps": ["Paris", "Lyon", "Marseille", "Nice"],
+    "specifics": ["Vol inclus", "Hôtels 4 étoiles", "Guide francophone"],
+    "options": ["Annulation gratuite", "Bagage 23kg inclus"],
+    "people": ["alice@example.com", "bob@example.com"],
+    "total_price": 2500,
+    "description": "Explorez les plus belles villes françaises, de Paris à Nice, avec un guide francophone et des hôtels 4 étoiles."
+  },
+  {
+    "title": "Road trip aux États-Unis",
+    "banner": "https://encrypted-tbn0.gstatic.com/licensed-image?q=tbn:ANd9GcTwJemX1EQbEt8VjppHeW8r-5TSNqtkHsTBXC9A7aseAB7TsKeHxYS2IQFVYunSqm4CDNATtVuxK6rlvZpBfP3ZjxUQiZlsC9FvbI-lJg",
+    "dates": {
+      "start": "2025-07-10",
+      "end": "2025-07-30",
+      "duration": "20 jours"
+    },
+    "steps": ["New York", "Chicago", "Las Vegas", "Los Angeles", "San Francisco"],
+    "specifics": ["Location de voiture incluse", "Motel et Airbnb", "Route 66"],
+    "options": ["Assurance voiture incluse", "WiFi portable"],
+    "people": ["charlie@example.com"],
+    "total_price": 4500,
+    "description": "Parcourez la fameuse Route 66 et visitez New York, Chicago, Las Vegas, et bien plus, avec une voiture de location et Wi-Fi portable."
+  },
+  {
+    "title": "Circuit au Japon",
+    "banner": "https://encrypted-tbn0.gstatic.com/licensed-image?q=tbn:ANd9GcQgcV3s5JaEzOlOoT_NAzL-uj5S2jqXMVvJITgr714nnif821K4m6gv3-vpLyDNJjBepgDLhDM_yNmi9SNWiBki5R2oEUQS9D4COfNyIdw",
+    "dates": {
+      "start": "2025-09-05",
+      "end": "2025-09-20",
+      "duration": "15 jours"
+    },
+    "steps": ["Tokyo", "Kyoto", "Osaka", "Hiroshima", "Nara"],
+    "specifics": ["Shinkansen inclus", "Ryokan traditionnel", "Pass JR illimité"],
+    "options": ["Excursions incluses", "Petit-déjeuner offert"],
+    "people": [],
+    "total_price": 3500,
+    "description": "Un voyage inoubliable au Japon avec des visites en Shinkansen, un séjour dans des ryokans traditionnels et des excursions incluses."
+  },
+  {
+    "title": "Aventure en Amérique du Sud",
+    "banner": "https://lh5.googleusercontent.com/p/AF1QipMSCk5iEAjG0fz1UhI_RwTBwQnbEy7NzDIS_KQV=w675-h390-n-k-no",
+    "dates": {
+      "start": "2025-11-01",
+      "end": "2025-11-21",
+      "duration": "20 jours"
+    },
+    "steps": ["Buenos Aires", "Santiago", "Lima", "Bogotá", "Rio de Janeiro"],
+    "specifics": ["Excursions incluses", "Hôtels 3 étoiles", "Assistance locale 24/7"],
+    "options": ["Guide privé", "Excursion jungle Amazonienne"],
+    "people": ["david@example.com", "emma@example.com"],
+    "total_price": 3800,
+    "description": "Explorez l'Amérique du Sud de Buenos Aires à Rio de Janeiro avec des excursions guidées et des hôtels 3 étoiles."
+  },
+  {
+    "title": "Séjour en Italie",
+    "banner": "https://encrypted-tbn3.gstatic.com/licensed-image?q=tbn:ANd9GcThdMzlstqrtyShS2oT4kFY5yFdymNZynQ3uR2ZrsefxcZW9EFkMcHKXkmJtDhQYdFbR2zNIF4qDtAfl3TAia_nzZ6Tot2Gl3Rw9BYLhg",
+    "dates": {
+      "start": "2025-08-01",
+      "end": "2025-08-15",
+      "duration": "14 jours"
+    },
+    "steps": ["Rome", "Florence", "Venise", "Milan"],
+    "specifics": ["Visites guidées", "Repas gastronomiques", "Transferts privés"],
+    "options": ["Annulation sans frais", "Expérience culinaire"],
+    "people": ["francois@example.com"],
+    "total_price": 2700,
+    "description": "Découvrez les villes mythiques de l'Italie, entre Rome, Florence et Milan, avec des visites guidées et des repas gastronomiques."
+  },
+  {
+    "title": "Safari en Afrique du Sud",
+    "banner": "https://lh5.googleusercontent.com/p/AF1QipO2LrwMfDtvvvfZf63EL7rTIDFLBC3nWDGvACLN=w675-h390-n-k-no",
+    "dates": {
+      "start": "2025-05-10",
+      "end": "2025-05-20",
+      "duration": "10 jours"
+    },
+    "steps": ["Johannesburg", "Kruger Park", "Le Cap"],
+    "specifics": ["Safari inclus", "Lodges de luxe", "Guide expert"],
+    "options": ["Annulation gratuite", "Soirée feu de camp"],
+    "people": [],
+    "total_price": 4100,
+    "description": "Profitez d'un safari dans le parc Kruger, séjournez dans des lodges de luxe et vivez l'expérience d'un guide expert."
+  },
+  {
+    "title": "Voyage aux Maldives",
+    "banner": "https://lh5.googleusercontent.com/p/AF1QipML1hCHt74ry3frkJ7nZP4YVbH9FGgrmAfHERde=w675-h390-n-k-no",
+    "dates": {
+      "start": "2025-04-01",
+      "end": "2025-04-10",
+      "duration": "9 jours"
+    },
+    "steps": ["Malé", "Atolls des Maldives"],
+    "specifics": ["Bungalow sur l'eau", "Plongée sous-marine", "Dîner romantique"],
+    "options": ["Spa inclus", "Cocktail de bienvenue"],
+    "people": [],
+    "total_price": 5600,
+    "description": "Détente absolue sur des plages paradisiaques avec un bungalow sur l'eau, plongée et dîner romantique au programme."
+  },
+  {
+    "title": "Aventure en Islande",
+    "banner": "https://encrypted-tbn3.gstatic.com/licensed-image?q=tbn:ANd9GcROJg2dysllZ4UIPGvQMHflx4-W2TMm_e7RhF41Sja-_8wIPhfaMUOD5-94zUZD4wLNHi4_2I6qjX6COzy7bu09yt0rQCaELmGslIWgIg",
+    "dates": {
+      "start": "2025-10-15",
+      "end": "2025-10-25",
+      "duration": "10 jours"
+    },
+    "steps": ["Reykjavik", "Blue Lagoon", "Geysers", "Cercle d'or"],
+    "specifics": ["Voiture incluse", "Excursion aurores boréales"],
+    "options": ["Annulation flexible", "Petit-déjeuner offert"],
+    "people": [],
+    "total_price": 3200,
+    "description": "Explorez l'Islande avec une voiture incluse, découvrez les geysers et vivez une expérience unique des aurores boréales."
+  },
+  {
+    "title": "Escapade en Thaïlande",
+    "banner": "https://encrypted-tbn3.gstatic.com/licensed-image?q=tbn:ANd9GcQSs8fyFH2UV4qe7qUZD1anU16aJdSRgA-aDLX_P9Dk-og62T-gpiHsRd-GxoRIB-tEqKVIcrRRDj1DkQanczBZrvAyQzhEnEm_VTYLYbk",
+    "dates": {
+      "start": "2025-12-01",
+      "end": "2025-12-10",
+      "duration": "9 jours"
+    },
+    "steps": ["Bangkok", "Chiang Mai", "Phuket"],
+    "specifics": ["Visites culturelles", "Plages paradisiaques", "Cuisine locale"],
+    "options": ["Visite de temples", "Transferts privés"],
+    "people": ["lucas@example.com", "olivia@example.com"],
+    "total_price": 2100,
+    "description": "Plages idylliques et découverte culturelle, entre Bangkok, Chiang Mai et Phuket, avec des visites de temples et des transferts privés."
+  },
+  {
+    "title": "Exploration en Chine",
+    "banner": "https://encrypted-tbn2.gstatic.com/licensed-image?q=tbn:ANd9GcTy17NnrTM9dEYFFwVeGKswNgvyOBegjypl15vkxo9MHuKXX2D2L1adU78UfX9mbtmim7P_NLjKw1Gcuh-1t2kfgdtksnCMhqwftQY7cQ",
+    "dates": {
+      "start": "2025-07-05",
+      "end": "2025-07-20",
+      "duration": "15 jours"
+    },
+    "steps": ["Pékin", "Xi'an", "Shanghai", "Guilin"],
+    "specifics": ["Muraille de Chine", "Excursions historiques", "Hôtels 3 étoiles"],
+    "options": ["Guide francophone", "Visite de la Cité Interdite"],
+    "people": ["kate@example.com"],
+    "total_price": 3300,
+    "description": "Partez à la découverte de la Chine, du Muraille de Chine à la Cité Interdite, avec un guide francophone pour vous accompagner."
+  },
+  {
+    "title": "Séjour détente en Espagne",
+    "banner": "https://encrypted-tbn1.gstatic.com/licensed-image?q=tbn:ANd9GcRWUY96Brdd9ZF399_8C2uKUO2eIB29Hss2-EAYzBQJ3KQfRAQyUOqzyaGtrPiI76U2ciJlciDYktxrMBMKky49SgK81cfFwSXxOAp-gA",
+    "dates": {
+      "start": "2025-07-15",
+      "end": "2025-07-25",
+      "duration": "10 jours"
+    },
+    "steps": ["Madrid", "Barcelone", "Seville"],
+    "specifics": ["Plages et farniente", "Cuisine méditerranéenne", "Hôtels 5 étoiles"],
+    "options": ["Dégustation de tapas", "Excursion à Montserrat"],
+    "people": ["isabelle@example.com"],
+    "total_price": 2800,
+    "description": "Plages et gastronomie méditerranéenne, avec des hôtels 5 étoiles et une excursion à Montserrat en Espagne."
+  },
+  {
+    "title": "Voyage au Pérou",
+    "banner": "https://encrypted-tbn0.gstatic.com/licensed-image?q=tbn:ANd9GcSe9h0DlZ1N4Y05WESiOwVYBJ1IscIc6TmSU_NFQFAs7RSYGHjHAb-NYs4xGLvpQ_Ox0Gn_RDIX-23CLR6LUeRf5_oOz7G-iD1r4BVbsQ",
+    "dates": {
+      "start": "2025-09-01",
+      "end": "2025-09-15",
+      "duration": "14 jours"
+    },
+    "steps": ["Lima", "Cusco", "Machu Picchu"],
+    "specifics": ["Randonnée", "Culturale locale", "Hôtels de charme"],
+    "options": ["Visite guidée de Machu Picchu", "Passage en train touristique"],
+    "people": ["samuel@example.com", "paul@example.com"],
+    "total_price": 3200,
+    "description": "Randonnée et immersion dans la culture locale du Pérou, avec une visite guidée du Machu Picchu et un trajet en train touristique."
+  },
+  {
+    "title": "Séjour en Grèce",
+    "banner": "https://encrypted-tbn1.gstatic.com/licensed-image?q=tbn:ANd9GcSOiwj3QAo3zF40S6UPJ4KgYH2py_UuYHPY9m3EqRojMbj2g5jHhLYzkPZ-qzDkXaMfocvyZEoG_D9U5TKm0MSvZiKTpMT_h8ttEuk0TA",
+    "dates": {
+      "start": "2025-06-01",
+      "end": "2025-06-10",
+      "duration": "9 jours"
+    },
+    "steps": ["Athènes", "Santorin", "Mykonos"],
+    "specifics": ["Croisière autour des îles", "Plages de rêve", "Hôtels de luxe"],
+    "options": ["Visite de temples antiques", "Dîner avec vue sur la mer"],
+    "people": ["martin@example.com"],
+    "total_price": 2700,
+    "description": "Explorez les îles grecques, entre relaxation sur les plages et visites culturelles des temples antiques, avec une croisière autour des îles."
+  },
+  {
+    "title": "Croisière en Méditerranée",
+    "banner": "https://s7g10.scene7.com/is/image/barcelo/histoire-de-la-mer-mediterranee_croisiere-en-mer?&&fmt=webp-alpha&qlt=75&wid=1300&fit=crop,1",
+    "dates": {
+      "start": "2025-05-01",
+      "end": "2025-05-14",
+      "duration": "13 jours"
+    },
+    "steps": ["Gênes", "Rome", "Barcelone", "Côte d'Azur"],
+    "specifics": ["Croisière de luxe", "Excursions à terre"],
+    "options": ["Piscine et spa à bord", "Excursions guidées"],
+    "people": [],
+    "total_price": 4000,
+    "description": "Une croisière de luxe avec des excursions à terre à Gênes, Rome, Barcelone, et la Côte d'Azur, le tout avec piscine et spa."
+  },
+  {
+    "title": "Expédition en Antarctique",
+    "banner": "https://www.voyage-antarctique.com/wp-content/uploads/voyage-antarctique11-1-1250x800.jpg",
+    "dates": {
+      "start": "2025-02-10",
+      "end": "2025-02-20",
+      "duration": "10 jours"
+    },
+    "steps": ["Ushuaïa", "Antarctique"],
+    "specifics": ["Croisière incluse", "Excursions en Zodiac"],
+    "options": ["Voyage écologique", "Observation des manchots"],
+    "people": ["chloe@example.com"],
+    "total_price": 7000,
+    "description": "Vivez une expérience unique avec une croisière en Antarctique, découvrez la faune et les glaciers, avec des excursions en Zodiac."
+  },
+  {
+    "title": "Voyage en Nouvelle-Zélande",
+    "banner": "https://lh5.googleusercontent.com/p/AF1QipM--eMPGyWRRV8Z55GvgWP5Bdmcsq7W9RpBYS7s=w675-h390-n-k-no",
+    "dates": {
+      "start": "2025-01-05",
+      "end": "2025-01-20",
+      "duration": "15 jours"
+    },
+    "steps": ["Auckland", "Rotorua", "Queenstown", "Milford Sound"],
+    "specifics": ["Randonnée", "Volcans et geysers", "Expérience nature"],
+    "options": ["Excursion en bateau", "Parc national"],
+    "people": ["olivier@example.com", "lucie@example.com"],
+    "total_price": 3800,
+    "description": "Explorez la nature sauvage de la Nouvelle-Zélande entre randonnées dans les Alpes, volcans et geysers, pour un séjour au cœur de la nature."
+  }
+]
