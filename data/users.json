@@ -18,7 +18,7 @@
         "password": "$2y$10$iQR6kGUTa0CZGUsaxrvyt.gPRMjcXq8wLJ\/wPPLyYMdfQSZloib92",
         "birthdate": "2025-02-26",
         "created_at": "2025-03-30 13:31:26",
-        "permission_level": 0,
+        "permission_level": 1,
         "class": "VIP",
         "trips": []
     },
@@ -40,6 +40,18 @@
         "password": "$2y$10$jze83.nR6GFwm0bKA1NiieYj64CGGhVM4up0T01t9mmcj1Zl1mcfy",
         "birthdate": "1010-10-10",
         "created_at": "2025-03-30 16:26:42",
+        "permission_level": 0,
+        "class": "normal",
+        "trips": [
+            "D\u00e9couverte de la France"
+        ]
+    },
+    {
+        "name": "Liam",
+        "email": "liamdelmotte@gmail.com",
+        "password": "$2y$10$jze83.nR6GFwm0bKA1NiieYj64CGGhVM4up0T01t9mmcj1Zl1mcfy",
+        "birthdate": "1010-15-10",
+        "created_at": "2025-03-30 16:30:42",
         "permission_level": 0,
         "class": "normal",
         "trips": [
