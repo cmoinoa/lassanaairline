@@ -1,0 +1,26 @@
+[
+    {
+        "user": "noa@sandium.com",
+        "trip": "Voyage aux Maldives",
+        "amount": 5600,
+        "date": "2025-03-30 13:42:26"
+    },
+    {
+        "user": "caca92@gmail.com",
+        "trip": "Voyage au P\u00e9rou",
+        "amount": 3200,
+        "date": "2025-03-30 15:07:06"
+    },
+    {
+        "user": "noa@sandium.com",
+        "trip": "Voyage au P\u00e9rou",
+        "amount": 3200,
+        "date": "2025-03-30 16:23:33"
+    },
+    {
+        "user": "dede@gmail.com",
+        "trip": "D\u00e9couverte de la France",
+        "amount": 2500,
+        "date": "2025-03-30 17:33:17"
+    }
+]
