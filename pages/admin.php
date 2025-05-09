@@ -153,6 +153,7 @@ $endIndex = min($startIndex + $usersPerPage, $totalUsers);
             <a href="?page=<?= $currentPage + 1 ?>">Suivant</a>
         <?php endif; ?>
     </div>
+<script src="js/theme.js"></script>
 
 </body>
 </html>
