@@ -29,6 +29,7 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
     <link rel="stylesheet" href="../pages/style.css">
 </head>
 <body>
+    <script src="js/login.js"></script>
     <div class="container">
         <header class="card">
             <h1>Connexion</h1>
