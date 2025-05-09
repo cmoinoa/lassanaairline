@@ -61,5 +61,7 @@ $trip = $trips[$tripId];
 
         <p><a href="voyage.php?id=<?= $tripId ?>">Retour</a></p>
     </div>
+    <script src="js/theme.js"></script>
+
 </body>
 </html>
