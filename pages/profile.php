@@ -76,5 +76,7 @@ if (!$currentUser) {
             <p><a href="../index.php">Retour à l'accueil</a></p>
         </div>
     </div>
+    <script src="js/theme.js"></script>
+
 </body>
 </html>
