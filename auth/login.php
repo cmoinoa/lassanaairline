@@ -54,5 +54,7 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
 
         <p>Pas encore de compte ? <a href="signup.php">S'inscrire</a></p>
     </div>
+    <script src="js/theme.js"></script>
+
 </body>
 </html>
