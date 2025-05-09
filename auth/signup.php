@@ -85,5 +85,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
         <p>Déjà un compte ? <a href="login.php">Connectez-vous ici</a>.</p>
     </div>
+    <script src="js/theme.js"></script>
+
 </body>
 </html>
