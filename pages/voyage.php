@@ -76,5 +76,7 @@ if (isset($_GET['id']) && is_numeric($_GET['id'])) {
             <?php endif; ?>
         </div>
     </div>
+    <script src="js/theme.js"></script>
+
 </body>
 </html>
