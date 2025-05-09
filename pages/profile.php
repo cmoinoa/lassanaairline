@@ -30,6 +30,9 @@ if (!$currentUser) {
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <button id="toggle-theme">Changer de thème</button>
+<link id="theme-link" rel="stylesheet" href="css/clair.css">
+
     <div class="container">
         <div class="card">
             <h1>Profil de <?= htmlspecialchars($currentUser["name"]) ?></h1>
