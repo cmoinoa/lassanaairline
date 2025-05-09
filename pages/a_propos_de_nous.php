@@ -105,5 +105,7 @@ session_start();
     <div class="footer">
         <p>Lassana Airlines - Tous droits réservés</p>
     </div>
+    <script src="js/theme.js"></script>
+
 </body>
 </html>
