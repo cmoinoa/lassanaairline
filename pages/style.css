@@ -115,3 +115,13 @@ h3 {
         grid-template-columns: 1fr;
     }
 }
+body.light {
+  background-color: white;
+  color: black;
+}
+
+body.dark {
+  background-color: #121212;
+  color: white;
+}
+
