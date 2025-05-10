@@ -52,6 +52,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     <title>Inscription</title>
     <link rel="stylesheet" href="../pages/style.css">
 </head>
+<script src="caractereNb.js"></script>
 <body class="dark">
     <button id="toggle-theme">Changer de thème</button>
 <link rel="stylesheet" href="css/style.css">
