@@ -52,10 +52,9 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     <title>Inscription</title>
     <link rel="stylesheet" href="../pages/style.css">
 </head>
-<body>
+<body class="dark">
     <button id="toggle-theme">Changer de thème</button>
-<link id="theme-link" rel="stylesheet" href="css/clair.css">
-
+<link rel="stylesheet" href="css/style.css">
     <div class="container">
         <header class="card">
             <h1>Inscription</h1>
