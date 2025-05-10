@@ -1,6 +1,5 @@
 // theme.js
 
-// Lire le cookie
 function getCookie(name) {
   const cookies = document.cookie.split("; ");
   for (const c of cookies) {
@@ -10,7 +9,6 @@ function getCookie(name) {
   return null;
 }
 
-// Écrire un cookie
 function setCookie(name, value, days = 30) {
   const d = new Date();
   d.setTime(d.getTime() + (days*24*60*60*1000));
@@ -18,24 +16,25 @@ function setCookie(name, value, days = 30) {
 }
 
 document.addEventListener("DOMContentLoaded", () => {
-  const themeLink = document.getElementById("theme-link");
+  const body = document.body;
   const toggleBtn = document.getElementById("toggle-theme");
 
   const theme = getCookie("theme");
-  if (theme === "sombre") {
-    themeLink.href = "css/sombre.css";
+
+  if (theme === "light") {
+    body.classList.add("light");
   } else {
-    themeLink.href = "css/clair.css";
+    body.classList.add("dark"); // par défaut sombre
   }
 
   toggleBtn.addEventListener("click", () => {
-    const current = themeLink.getAttribute("href");
-    if (current.includes("clair")) {
-      themeLink.href = "css/sombre.css";
-      setCookie("theme", "sombre");
+    if (body.classList.contains("dark")) {
+      body.classList.replace("dark", "light");
+      setCookie("theme", "light");
     } else {
-      themeLink.href = "css/clair.css";
-      setCookie("theme", "clair");
+      body.classList.replace("light", "dark");
+      setCookie("theme", "dark");
     }
   });
 });
+
