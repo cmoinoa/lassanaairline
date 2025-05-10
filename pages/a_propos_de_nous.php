@@ -45,10 +45,9 @@ session_start();
         }
     </style>
 </head>
-<body>
+<body class="dark">
     <button id="toggle-theme">Changer de thème</button>
-<link id="theme-link" rel="stylesheet" href="css/clair.css">
-
+<link rel="stylesheet" href="css/style.css">
     <div class="container">
         <header class="card" style="position: relative;">
             <h1>Lassana Airlines</h1>
