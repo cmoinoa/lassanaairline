@@ -31,8 +31,7 @@ if (!$currentUser) {
 </head>
 <body class="dark">
     <button id="toggle-theme">Changer de thème</button>
-<link id="theme-link" rel="stylesheet" href="css/clair.css">
-
+<link rel="stylesheet" href="css/style.css">
     <div class="container">
         <div class="card">
             <h1>Profil de <?= htmlspecialchars($currentUser["name"]) ?></h1>
