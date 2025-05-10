@@ -85,9 +85,9 @@ $endIndex = min($startIndex + $usersPerPage, $totalUsers);
         }
     </style>
 </head>
-<body>
+<body class="dark">
 <button id="toggle-theme">Changer de thème</button>
-<link id="theme-link" rel="stylesheet" href="css/clair.css">
+<link rel="stylesheet" href="css/style.css">
 
     <h1>Dashboard Administrateur</h1>
 
