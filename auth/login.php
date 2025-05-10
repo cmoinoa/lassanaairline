@@ -28,9 +28,9 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
     <title>Connexion</title>
     <link rel="stylesheet" href="../pages/style.css">
 </head>
-<body>
+<body class="dark">
     <button id="toggle-theme">Changer de thème</button>
-<link id="theme-link" rel="stylesheet" href="css/clair.css">
+<link rel="stylesheet" href="css/style.css">
 
     <script src="js/login.js"></script>
     <div class="container">
