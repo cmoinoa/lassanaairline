@@ -18,17 +18,8 @@ if (empty($selectedTrips)) {
     die("Erreur : Voyages invalides.");
 }
 
-if (!isset($_GET['id']) || !is_numeric($_GET['id'])) {
-    die("Erreur : ID de voyage manquant ou invalide.");
-}
-
-$tripId = (int)$_GET['id'];
-
-if (!isset($trips[$tripId])) {
-    die("Erreur : Voyage introuvable.");
-}
-
-$trip = $trips[$tripId];
+$tripTitle = count($selectedTrips) === 1 ? $selectedTrips[0]['title'] : 'Plusieurs voyages';
+$totalPrice = array_sum(array_column($selectedTrips, 'total_price'));
 ?>
 
 <!DOCTYPE html>
@@ -36,19 +27,22 @@ $trip = $trips[$tripId];
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Paiement - <?= htmlspecialchars($trip['title']) ?></title>
+    <title>Paiement - <?= htmlspecialchars($tripTitle) ?></title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body class="dark">
     <button id="toggle-theme">Changer de thème</button>
-<link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style.css">
+
     <div class="container">
         <div class="card">
-            <h1>Paiement pour <?= htmlspecialchars($trip['title']) ?></h1>
-            <p>Prix : <?= htmlspecialchars($trip['total_price']) ?> €</p>
+            <h1>Paiement pour <?= htmlspecialchars($tripTitle) ?></h1>
+            <p>Prix total : <?= htmlspecialchars($totalPrice) ?> €</p>
 
             <form action="process_payment.php" method="POST">
-                <input type="hidden" name="trip_id" value="<?= $tripId ?>">
+                <?php foreach ($tripIds as $id): ?>
+                    <input type="hidden" name="trip_ids[]" value="<?= $id ?>">
+                <?php endforeach; ?>
 
                 <div class="form-group">
                     <label for="card_name">Nom et prénom :</label>
@@ -74,9 +68,8 @@ $trip = $trips[$tripId];
             </form>
         </div>
 
-        <p><a href="voyage.php?id=<?= $tripId ?>">Retour</a></p>
+        <p><a href="panier.php">Retour au panier</a></p>
     </div>
     <script src="js/theme.js"></script>
-
 </body>
 </html>
