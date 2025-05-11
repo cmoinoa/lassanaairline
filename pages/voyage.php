@@ -24,6 +24,7 @@ if (isset($_GET['id']) && is_numeric($_GET['id'])) {
     <link rel="stylesheet" href="style.css"> 
 </head>
 <body class="dark">
+    <script src="tri_voyage.js"></script>
     <button id="toggle-theme">Changer de thème</button>
 <link rel="stylesheet" href="css/style.css">
     <div class="container">
