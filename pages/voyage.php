@@ -22,6 +22,10 @@ if (isset($_GET['id']) && is_numeric($_GET['id'])) {
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title><?= htmlspecialchars($trip['title']) ?></title>
     <link rel="stylesheet" href="style.css"> 
+      <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Voyage</title>
+  <script src="js/calcul-prix.js"></script>
 </head>
 <body class="dark">
     <script src="tri_voyage.js"></script>
