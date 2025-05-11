@@ -1,4 +1,3 @@
-// Exemple de liste de voyages
 const voyages = [
     { titre: "Croisière Arctique", prix: 1500, date: "2025-07-01", etapes: 4 },
     { titre: "Trek Himalaya", prix: 1200, date: "2025-06-15", etapes: 6 },
