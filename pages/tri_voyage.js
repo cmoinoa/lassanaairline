@@ -1,4 +1,3 @@
-// Fonction de tri générique
 function trierVoyages(critere) {
     const container = document.getElementById("liste-voyages");
     const voyagesHTML = Array.from(container.querySelectorAll(".voyage"));
