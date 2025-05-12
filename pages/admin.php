@@ -126,7 +126,15 @@ $endIndex = min($startIndex + $usersPerPage, $totalUsers);
             <th>Permission</th>
             <th>Classe</th>
             <th>Voyages achetés</th>
-        </tr>
+        <td>
+      <label>
+        <input type="checkbox" class="toggle-vip" data-user="utilisateur" > VIP
+      </label>
+      <span class="spinner" style="display:none;">⏳</span>
+      <span class="success" style="display:none;color:green;">✔</span>
+      <span class="error" style="display:none;color:red;">❌</span>
+    </td>
+</tr>
         <?php for ($i = $startIndex; $i < $endIndex; $i++): ?>
             <tr>
                 <td><?= htmlspecialchars($users[$i]["name"]) ?></td>
@@ -158,7 +166,15 @@ $endIndex = min($startIndex + $usersPerPage, $totalUsers);
                         Aucun voyage acheté
                     <?php endif; ?>
                 </td>
-            </tr>
+            <td>
+      <label>
+        <input type="checkbox" class="toggle-vip" data-user="utilisateur" checked> VIP
+      </label>
+      <span class="spinner" style="display:none;">⏳</span>
+      <span class="success" style="display:none;color:green;">✔</span>
+      <span class="error" style="display:none;color:red;">❌</span>
+    </td>
+</tr>
         <?php endfor; ?>
     </table>
 
@@ -177,5 +193,6 @@ $endIndex = min($startIndex + $usersPerPage, $totalUsers);
     </div>
 <script src="js/theme.js"></script>
 
+<script src="js/admin.js"></script>
 </body>
 </html>
