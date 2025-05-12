@@ -1,0 +1,20 @@
+{
+  "jean": {
+    "prenom": "Jean",
+    "email": "jean@example.com",
+    "role": "utilisateur",
+    "vip": false
+  },
+  "marie": {
+    "prenom": "Marie",
+    "email": "marie@example.com",
+    "role": "admin",
+    "vip": true
+  },
+  "luc": {
+    "prenom": "Luc",
+    "email": "luc@example.com",
+    "role": "utilisateur",
+    "vip": true
+  }
+}
