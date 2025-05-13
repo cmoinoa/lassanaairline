@@ -16,7 +16,14 @@ if (empty($prenom) || empty($email)) {
     exit;
 }
 
-$users = json_decode(file_get_contents("data/utilisateurs.json"), true);
+$path = "data/utilisateurs.json";
+
+if (!file_exists($path)) {
+    echo json_encode(["success" => false, "message" => "Fichier utilisateur manquant."]);
+    exit;
+}
+
+$users = json_decode(file_get_contents($path), true);
 
 if (!isset($users[$login])) {
     echo json_encode(["success" => false, "message" => "Utilisateur introuvable."]);
@@ -26,6 +33,7 @@ if (!isset($users[$login])) {
 $users[$login]['prenom'] = $prenom;
 $users[$login]['email'] = $email;
 
-file_put_contents("data/utilisateurs.json", json_encode($users, JSON_PRETTY_PRINT));
+file_put_contents($path, json_encode($users, JSON_PRETTY_PRINT));
 
 echo json_encode(["success" => true]);
+?>
