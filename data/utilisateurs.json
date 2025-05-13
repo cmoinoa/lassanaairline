@@ -5,16 +5,10 @@
     "role": "utilisateur",
     "vip": false
   },
-  "marie": {
-    "prenom": "Marie",
-    "email": "marie@example.com",
+  "admin": {
+    "prenom": "Admin",
+    "email": "admin@clickjourney.fr",
     "role": "admin",
-    "vip": true
-  },
-  "luc": {
-    "prenom": "Luc",
-    "email": "luc@example.com",
-    "role": "utilisateur",
     "vip": true
   }
 }
