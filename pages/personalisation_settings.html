@@ -3,47 +3,150 @@
 <head>
   <meta charset="UTF-8" />
   <title>Personnalisation du voyage</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      max-width: 600px;
+      margin: 2rem auto;
+      padding: 1rem;
+    }
+    label, select {
+      display: block;
+      margin-bottom: 1rem;
+    }
+    #totalPrice {
+      font-weight: bold;
+      font-size: 1.2rem;
+      margin-top: 2rem;
+    }
+  </style>
 </head>
 <body>
   <h2>Personnalisation du voyage</h2>
 
-  <label for="optionsSelect">Choisissez une option :</label>
-  <select id="optionsSelect">
-    <option value="">Chargement...</option>
-  </select>
+  <div id="optionsContainer">
+    <!-- Les listes d'options seront générées ici -->
+  </div>
+
+  <div id="totalPrice">Prix total : --</div>
 
   <script>
-    document.addEventListener('DOMContentLoaded', function () {
-        const optionsSelect = document.getElementById('optionsSelect');
+    document.addEventListener('DOMContentLoaded', () => {
+      const params = new URLSearchParams(window.location.search);
+      const voyageId = params.get("id");
+      const optionsContainer = document.getElementById('optionsContainer');
+      const totalPriceElem = document.getElementById('totalPrice');
 
-        const params = new URLSearchParams(window.location.search);
-        const voyageId = params.get("id");
+      if (!voyageId) {
+        optionsContainer.innerHTML = '<p style="color:red;">ID de voyage manquant</p>';
+        return;
+      }
 
-        if (!voyageId) {
-            optionsSelect.innerHTML = '<option value="">ID de voyage manquant</option>';
-            return;
-        }
+      // Fonction pour charger les options (ex: plusieurs listes d'options)
+      function loadOptions() {
         fetch(`get_options.php?voyage_id=${voyageId}`)
-            .then(response => response.json())
-            .then(data => {
-                optionsSelect.innerHTML = ''; // Nettoyer
+          .then(res => res.json())
+          .then(data => {
+            optionsContainer.innerHTML = ''; // reset
 
-                if (!Array.isArray(data) || data.length === 0) {
-                    optionsSelect.innerHTML = '<option value="">Aucune option disponible</option>';
-                    return;
-                }
+            if (!Array.isArray(data) || data.length === 0) {
+              optionsContainer.innerHTML = '<p>Aucune option disponible</p>';
+              totalPriceElem.textContent = "Prix total : --";
+              return;
+            }
 
-                data.forEach(option => {
-                    const opt = document.createElement('option');
-                    opt.value = option.id;
-                    opt.textContent = option.nom;
-                    optionsSelect.appendChild(opt);
-                });
-            })
-            .catch(error => {
-                console.error("Erreur :", error);
-                optionsSelect.innerHTML = '<option value="">Erreur de chargement</option>';
+            // Ici on suppose que data est un tableau d'options, 
+            // mais si tu as plusieurs catégories d'options, adapte la structure.
+
+            // Si tu as plusieurs catégories d'options, par exemple :
+            // data = [
+            //   { categorie: "Transport", options: [...] },
+            //   { categorie: "Hébergement", options: [...] }
+            // ]
+            // Sinon on crée juste une seule liste déroulante.
+
+            // Pour l'exemple simple, on crée une seule liste déroulante avec toutes les options.
+            // Si tu as plusieurs listes, adapte en conséquence.
+
+            // Exemple : plusieurs options avec id, nom, catégorie, prix
+            // Je vais supposer que chaque option a { id, nom, prix, categorie }
+
+            // Grouper par catégorie
+            const categories = {};
+            data.forEach(opt => {
+              if (!categories[opt.categorie]) {
+                categories[opt.categorie] = [];
+              }
+              categories[opt.categorie].push(opt);
             });
+            Object.entries(categories).forEach(([categorie, options]) => {
+              const label = document.createElement('label');
+              label.textContent = `Choisissez une option pour ${categorie} :`;
+              label.htmlFor = `select-${categorie}`;
+
+              const select = document.createElement('select');
+              select.id = `select-${categorie}`;
+              select.dataset.categorie = categorie;
+
+              // option vide par défaut
+              const emptyOption = document.createElement('option');
+              emptyOption.value = "";
+              emptyOption.textContent = `Aucune option (${categorie})`;
+              select.appendChild(emptyOption);
+
+              options.forEach(opt => {
+                const optionElem = document.createElement('option');
+                optionElem.value = opt.id;
+                optionElem.textContent = `${opt.nom} (+${opt.prix} €)`;
+                optionElem.dataset.prix = opt.prix;
+                select.appendChild(optionElem);
+              });
+
+              optionsContainer.appendChild(label);
+              optionsContainer.appendChild(select);
+            });
+            const selects = optionsContainer.querySelectorAll('select');
+            selects.forEach(sel => {
+              sel.addEventListener('change', recalcTotal);
+            });
+            recalcTotal();
+          })
+          .catch(err => {
+            optionsContainer.innerHTML = '<p style="color:red;">Erreur de chargement des options</p>';
+            totalPriceElem.textContent = "Prix total : --";
+            console.error(err);
+          });
+      }
+
+      function recalcTotal() {
+        // Récupérer les options sélectionnées
+        const selects = optionsContainer.querySelectorAll('select');
+        const selectedOptionIds = [];
+
+        selects.forEach(sel => {
+          if (sel.value) selectedOptionIds.push(sel.value);
+        });
+        const params = new URLSearchParams();
+        params.append('voyage_id', voyageId);
+        if (selectedOptionIds.length > 0) {
+          params.append('options', selectedOptionIds.join(','));
+        }
+
+        fetch(`calculate_price.php?${params.toString()}`)
+          .then(res => res.json())
+          .then(data => {
+            if (data && typeof data.total === "number") {
+              totalPriceElem.textContent = `Prix total : ${data.total.toFixed(2)} €`;
+            } else {
+              totalPriceElem.textContent = "Erreur lors du calcul du prix";
+            }
+          })
+          .catch(err => {
+            totalPriceElem.textContent = "Erreur lors du calcul du prix";
+            console.error(err);
+          });
+      }
+      loadOptions();
     });
   </script>
 </body>
