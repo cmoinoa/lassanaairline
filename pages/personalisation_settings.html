@@ -41,8 +41,6 @@
         optionsContainer.innerHTML = '<p style="color:red;">ID de voyage manquant</p>';
         return;
       }
-
-      // Fonction pour charger les options (ex: plusieurs listes d'options)
       function loadOptions() {
         fetch(`get_options.php?voyage_id=${voyageId}`)
           .then(res => res.json())
@@ -55,23 +53,6 @@
               return;
             }
 
-            // Ici on suppose que data est un tableau d'options, 
-            // mais si tu as plusieurs catégories d'options, adapte la structure.
-
-            // Si tu as plusieurs catégories d'options, par exemple :
-            // data = [
-            //   { categorie: "Transport", options: [...] },
-            //   { categorie: "Hébergement", options: [...] }
-            // ]
-            // Sinon on crée juste une seule liste déroulante.
-
-            // Pour l'exemple simple, on crée une seule liste déroulante avec toutes les options.
-            // Si tu as plusieurs listes, adapte en conséquence.
-
-            // Exemple : plusieurs options avec id, nom, catégorie, prix
-            // Je vais supposer que chaque option a { id, nom, prix, categorie }
-
-            // Grouper par catégorie
             const categories = {};
             data.forEach(opt => {
               if (!categories[opt.categorie]) {
