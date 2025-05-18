@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <title>Personnalisation du voyage</title>
+</head>
+<body>
+  <h2>Personnalisation du voyage</h2>
+
+  <label for="optionsSelect">Choisissez une option :</label>
+  <select id="optionsSelect">
+    <option value="">Chargement...</option>
+  </select>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+        const optionsSelect = document.getElementById('optionsSelect');
+
+        const params = new URLSearchParams(window.location.search);
+        const voyageId = params.get("id");
+
+        if (!voyageId) {
+            optionsSelect.innerHTML = '<option value="">ID de voyage manquant</option>';
+            return;
+        }
+        fetch(`get_options.php?voyage_id=${voyageId}`)
+            .then(response => response.json())
+            .then(data => {
+                optionsSelect.innerHTML = ''; // Nettoyer
+
+                if (!Array.isArray(data) || data.length === 0) {
+                    optionsSelect.innerHTML = '<option value="">Aucune option disponible</option>';
+                    return;
+                }
+
+                data.forEach(option => {
+                    const opt = document.createElement('option');
+                    opt.value = option.id;
+                    opt.textContent = option.nom;
+                    optionsSelect.appendChild(opt);
+                });
+            })
+            .catch(error => {
+                console.error("Erreur :", error);
+                optionsSelect.innerHTML = '<option value="">Erreur de chargement</option>';
+            });
+    });
+  </script>
+</body>
+</html>
